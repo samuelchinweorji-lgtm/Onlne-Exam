@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Result</title>
+</head>
+<body>
+
+<h1>Exam Result</h1>
+
+<p id="student"></p>
+<p id="score"></p>
+<p id="percentage"></p>
+
+<script>
+
+const student = localStorage.getItem("studentID");
+const score = localStorage.getItem("score");
+const total = localStorage.getItem("total");
+const percentage = localStorage.getItem("percentage");
+
+document.getElementById("student").textContent =
+"Student ID: " + student;
+
+document.getElementById("score").textContent =
+"Score: " + score + " / " + total;
+
+document.getElementById("percentage").textContent =
+"Percentage: " + percentage + "%";
+
+</script>
+
+</body>
+</html>
